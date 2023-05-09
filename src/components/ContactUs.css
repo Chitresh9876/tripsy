@@ -40,3 +40,12 @@
     }
     
 }
+@media screen and (max-width:550px) {
+    .container{
+        margin: 4rem 1rem;
+    }
+    .form{
+        width: 100%;
+    }
+    
+}
