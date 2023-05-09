@@ -1,0 +1,142 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    margin-top: 2rem;
+    width: 95%;
+    height:4rem;
+    background: #fff;
+    box-shadow: 0 0.5rem 0.5rem 0 rgba(0,0,0,0.2);
+    border-radius: 0.7rem;
+    z-index: 9999;
+    position: fixed;
+    left:50%;
+    transform: translate(-50%);
+}
+.nav-logo{
+    font-size: 1.5rem;
+    font-weight: 700;
+    cursor: pointer;
+    padding-top: 1rem;
+    
+}
+.nav-logo Link{
+    color: black;
+    text-decoration: none;
+}
+.nav-items{
+    display: grid;
+    grid-template-columns: repeat(6,auto);
+    grid-gap: 0.5rem;
+    list-style: none;
+    align-items: center;
+}
+.item{
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-left: 5px;
+    padding:0.5rem 1rem;
+    border-radius: 0.5rem;
+    white-space: nowrap;
+    transition: all 0.2s ease-in-out;
+}
+
+.item i{
+    padding: 0.2rem;
+}
+.item:hover{
+    /* background: rgb(26, 230, 26); */
+    border-bottom: 1px solid blue;
+    box-shadow: 2px 2px 5px blue;
+}
+
+.signup{
+    display: none;
+}
+button{
+    white-space: nowrap;
+    font-size:1.2rem;
+    font-weight: 550;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    border: none;
+    background: white;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+button:hover{
+    background: blue;
+    color: white;
+    box-shadow: 2px 2px 5px blue;
+}
+
+.menuicon{
+    font-size: 1.2rem;
+    font-weight: 500;
+    display: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width:850px) {
+    .nav-items{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background: white;
+        width: 99.8%;
+        height: auto;
+        position: absolute;
+        top: 4.5rem;
+        left: -100%;
+        opacity: 0;
+        align-items: stretch;
+        padding:1rem 0 2rem 0;
+        margin-top: 0;
+        border-radius: 0.5rem;
+        transition: all 0.3s ease-in-out;
+        
+    }
+    .nav-items.active{
+        left: 50%;
+        transform: translate(-50%);
+        opacity: 1;
+        z-index: 1;
+        transition: all 0.3s ease-in-out;
+    }
+    .item{
+        padding: 1.5rem 0;
+        display: block;
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+    .item:hover{
+        background: blue;
+        color: white;
+        transition: none;
+    }
+    button{
+        display: none;
+    }
+    .signup{
+        display: block;
+        text-align: center;
+        font-size: 1.2rem;
+        font-weight: 500;
+        color: white;
+        text-decoration: none;
+        background: blue;
+        margin: auto;
+        padding: 1.5rem 0;
+        width: 80%;
+        border-radius: 0.5rem;
+        letter-spacing: 2px;
+    }
+
+    .menuicon{
+        display:block;
+    }
+    
+}

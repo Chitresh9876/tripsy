@@ -1,0 +1,64 @@
+.content{
+    margin: 4rem 6rem;
+}
+.content h2{
+    font-size: 5rem;
+}
+.content>p{
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+.cards{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4rem;
+}
+.card{
+    width: 30%;
+    height: 450px;
+    text-align: left;
+    border-radius: 1rem;
+    padding: 1rem 1rem 1.5rem 1rem ;
+    cursor: pointer;
+    box-shadow: 2px 2px 25px 10px rgba(0,0,0,0.2);
+}
+.image{
+    width: 100%;
+    height: 60%;
+    overflow: hidden;
+    border-radius: 0.8rem;
+}
+img{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    transition: all 0.3s ease-in-out;
+}  
+.image:hover img{
+    transform: scale(1.3);
+}
+.desc h4{
+    margin: 1rem 0.5rem;
+    font-size: 1.4rem;
+}
+@media screen and (max-width:850px) {
+    .content{
+        margin: 4rem 2rem;
+    }
+    .content h2{
+        font-size: 4rem; 
+        white-space: nowrap;
+    }
+    .content>p{
+        font-size: 1.2rem;
+    }
+    .cards{
+        display: flex;
+       flex-direction: column;
+        margin-top: 4rem;
+    }
+    .card{
+        width: 100%;
+        margin: 1rem;
+    }
+}

@@ -1,0 +1,54 @@
+.heroimage{
+    position: relative;
+    background-size: cover;
+    height: 99vh;
+    width: 100%;
+    
+}
+.heroimage_about{
+    position: relative;
+    height: 70vh;
+    width: 100%;
+
+}
+.herotext{
+    color: white;
+    position: absolute;
+    top:40%;
+    left: 50%;
+    transform: translate(-50%);
+    white-space: nowrap; 
+}
+
+
+h1{
+    font-size: 5rem;
+}
+.herotext p{
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
+.herotext .show{
+    
+    background-color: white;
+    text-decoration: none;
+    padding: 1rem 1.5rem;
+    border-radius: 1rem;
+    font-size: large;
+    font-weight: bold;
+    color:black;
+}
+.hide{
+    display: none;
+}
+
+@media screen and (max-width:1000px) {
+    .herotext h1{
+        font-size: 3rem;
+    }  
+    .herotext p{
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+    } 
+    
+}
