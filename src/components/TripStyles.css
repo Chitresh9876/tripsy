@@ -46,11 +46,11 @@ img{
         margin: 4rem 2rem;
     }
     .content h2{
-        font-size: 4rem; 
+        font-size: 2rem; 
         
     }
     .content>p{
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
     .cards{
         display: flex;
