@@ -42,13 +42,14 @@
 }
 @media screen and (max-width:550px) {
     .container{
-        margin: 4rem 0.5rem;
+        margin: 4rem 0rem;
     }
     .container h2{
         font-size: 1.5rem;
     }
     .form{
         width: 100%;
+        padding: 1rem;
     }
     
 }
