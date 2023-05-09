@@ -64,5 +64,28 @@ img{
         margin: 1rem;
     }
 }
+@media screen and (max-width:550px) {
+    .content{
+        margin: 4rem 1rem;
+    }
+    .content h2{
+        font-size: 3rem; 
+        
+    }
+    .content>p{
+        font-size: 1.1rem;
+    }
+    .cards{
+        display: flex;
+       flex-direction: column;
+       margin-right: 2rem;
+        margin-top: 4rem;
+    }
+    .card{
+        width: 100%;
+        height: auto;
+        margin: 1rem;
+    }
+}
 
 
