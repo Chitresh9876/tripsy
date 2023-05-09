@@ -47,7 +47,7 @@ img{
     }
     .content h2{
         font-size: 4rem; 
-        white-space: nowrap;
+        
     }
     .content>p{
         font-size: 1.2rem;
@@ -55,6 +55,7 @@ img{
     .cards{
         display: flex;
        flex-direction: column;
+       margin-right: 2rem;
         margin-top: 4rem;
     }
     .card{
@@ -62,3 +63,5 @@ img{
         margin: 1rem;
     }
 }
+
+
